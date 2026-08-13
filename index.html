@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kerthik S - DevOps Engineer & Data Science Professional. Expert in AWS, Terraform, Docker, Kubernetes, Prometheus, Grafana, and Cloud Infrastructure Automation.">
+    <meta name="keywords" content="Kerthik S, DevOps Engineer, Data Science, AWS, Terraform, Kubernetes, Docker, Prometheus, Grafana, Cloud Automation, Chennai">
+    <meta name="author" content="Kerthik S">
+    <title>Kerthik S | DevOps Engineer & Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <!-- Background Grid & Glow Effects -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-prompt">&gt;_</span>
+                <span class="logo-text">kerthik<span class="accent-dot">.dev</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Dark / Light Mode Toggle Button -->
+                <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Dark / White Theme">
+                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <span class="theme-mode-text" id="theme-mode-label">Dark</span>
+                </button>
+
+                <button class="btn-terminal-toggle" id="open-terminal-btn" title="Open Interactive CLI">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                    <span>Terminal</span>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta">Get in Touch</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Open to Cloud & DevOps Roles</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Kerthik S</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="typing-static">I build </span>
+                        <span class="typing-dynamic" id="typing-text">Cloud Infrastructure</span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        DevOps Engineering professional and M.Sc. Data Science graduate skilled in automated AWS resource discovery, infrastructure-as-code (Terraform), Docker containerization, CI/CD pipelines, and enterprise-grade observability with Prometheus & Grafana.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#audit-demo-anchor" class="btn btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                            <span>Live Cloud Audit Demo</span>
+                        </a>
+                        <button class="btn btn-secondary copy-email-btn" data-email="kerthikdev@gmail.com">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Copy Email</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-quick-meta">
+                        <div class="meta-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Chennai, Tamil Nadu, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <a href="https://github.com/kerthikdev" target="_blank" rel="noopener">github.com/kerthikdev</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Terminal Window -->
+                <div class="hero-terminal-wrapper">
+                    <div class="terminal-card">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="terminal-title">kerthik@aws-cloud-node:~</div>
+                            <div class="terminal-badge">BASH v5.2</div>
+                        </div>
+                        <div class="terminal-body" id="hero-terminal-body">
+                            <div class="terminal-line"><span class="t-muted"># Initializing DevOps environment...</span></div>
+                            <div class="terminal-line"><span class="t-prompt">kerthik@cloud-node:~$</span> <span class="t-cmd">whoami</span></div>
+                            <div class="terminal-line t-output"><span class="t-highlight">Kerthik S</span> - Cloud Infrastructure & Automation Engineer</div>
+                            <div class="terminal-line"><span class="t-prompt">kerthik@cloud-node:~$</span> <span class="t-cmd">aws --version</span></div>
+                            <div class="terminal-line t-output">aws-cli/2.15.0 Python/3.11.4 Linux/x86_64</div>
+                            <div class="terminal-line"><span class="t-prompt">kerthik@cloud-node:~$</span> <span class="t-cmd">cat metrics_summary.json</span></div>
+                            <div class="terminal-line t-json">
+{<br>
+&nbsp;&nbsp;<span class="t-key">"backup_automation"</span>: <span class="t-val">"80% workload reduction"</span>,<br>
+&nbsp;&nbsp;<span class="t-key">"ec2_provision_time"</span>: <span class="t-val">"15m -> <5m (66% faster)"</span>,<br>
+&nbsp;&nbsp;<span class="t-key">"ami_setup_reduction"</span>: <span class="t-val">"60% setup reduction"</span>,<br>
+&nbsp;&nbsp;<span class="t-key">"audit_rules"</span>: <span class="t-val">"20+ AWS security/cost rules"</span><br>
+}
+                            </div>
+                            <div class="terminal-line"><span class="t-prompt">kerthik@cloud-node:~$</span> <span class="t-cmd">type 'help' below for commands</span></div>
+                            
+                            <div class="interactive-input-line">
+                                <span class="t-prompt">kerthik@cloud-node:~$</span>
+                                <input type="text" class="terminal-input" id="hero-term-input" placeholder="try: skills, projects, contact, clear" autocomplete="off" spellcheck="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                    </div>
+                    <div class="stat-number" data-target="80">0%</div>
+                    <div class="stat-label">Manual Backup Ops Reduced</div>
+                    <div class="stat-detail">AWS SDK & JS Snapshot Automation</div>
+                </div>
+
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <div class="stat-number-text">&lt; 5 mins</div>
+                    <div class="stat-label">EC2 Provisioning Time</div>
+                    <div class="stat-detail">Down from 15 mins via Bash User Data</div>
+                </div>
+
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    </div>
+                    <div class="stat-number" data-target="50">0+</div>
+                    <div class="stat-label">AWS Resources Audited</div>
+                    <div class="stat-detail">ScoutSuite, Steampipe & Boto3 scans</div>
+                </div>
+
+                <div class="stat-card glass-card">
+                    <div class="stat-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div class="stat-number" data-target="20">0+</div>
+                    <div class="stat-label">Audit & Cost Rules</div>
+                    <div class="stat-detail">Rule engine detecting cloud risks</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Core Competencies -->
+        <section class="section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">&gt; CORE ARCHITECTURE</span>
+                    <h2 class="section-title">About & Focus Areas</h2>
+                    <p class="section-description">
+                        Combining solid Computer Science fundamentals with Master's-level Data Science expertise to build scalable, secure, and cost-effective cloud systems.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                        </div>
+                        <h3>Cloud Infrastructure & AWS</h3>
+                        <p>Architecting and managing AWS core resources (EC2, S3, IAM, VPC, EBS, RDS, Elastic IPs, Load Balancers) with automated snapshot policies and infrastructure drift compliance.</p>
+                        <div class="tech-tags">
+                            <span class="tag">AWS EC2/S3/VPC</span>
+                            <span class="tag">IAM Governance</span>
+                            <span class="tag">AWS SDK</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Infrastructure as Code & CI/CD</h3>
+                        <p>Writing reproducible Terraform manifests for cloud provisioning, Docker containerization, custom AMI creation, and GitHub Actions workflow automation.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Terraform</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Bash Scripting</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3>Observability & Monitoring</h3>
+                        <p>Building real-time telemetry dashboards using Prometheus for metric collection and Grafana for visual dashboards, monitoring 20+ key system & app metrics.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">ScoutSuite</span>
+                            <span class="tag">Steampipe</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        </div>
+                        <h3>Data Science & Automation Engines</h3>
+                        <p>Combining Boto3 python automation engines, FastAPI microservices, and Data Science methodology to audit cloud costs, detect unused resources, and predict risks.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python / Boto3</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Data Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section-padding bg-alt" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">&gt; WORK HISTORY</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role">DevOps Engineering Intern</h3>
+                                    <div class="exp-company">
+                                        <span class="company-name">SentinelFox</span>
+                                        <span class="company-loc">• Chennai, India</span>
+                                    </div>
+                                </div>
+                                <div class="exp-date">Nov. 2023 – Jan. 2024</div>
+                            </div>
+
+                            <ul class="exp-bullet-list">
+                                <li>
+                                    <strong>AWS Backup Automation (80% Efficiency Gain):</strong> Engineered JavaScript automation scripts using the AWS SDK to schedule automated snapshot backups for <strong>20+ Amazon EC2 instances</strong>, reducing manual snapshot management and overhead by ~80%.
+                                </li>
+                                <li>
+                                    <strong>Cloud Security Assessments:</strong> Conducted comprehensive security reviews across <strong>50+ AWS resources</strong> using <strong>ScoutSuite</strong> and <strong>Steampipe</strong>, identifying critical IAM misconfigurations, open S3 buckets, EC2 risks, and networking compliance gaps.
+                                </li>
+                                <li>
+                                    <strong>Server Provisioning Automation (15m → &lt;5m):</strong> Authored <strong>10+ Bash automation scripts</strong> for Amazon EC2 User Data to automate repository cloning from GitHub, dependency installations, and service startup, cutting server provisioning times by 66%.
+                                </li>
+                                <li>
+                                    <strong>Custom AMI Management:</strong> Built and maintained 2+ hardened Amazon Machine Images (AMIs) with pre-configured software dependencies, accelerating environment setup by <strong>60%</strong> across deployment pipelines.
+                                </li>
+                                <li>
+                                    <strong>Technical Documentation & Blogging:</strong> Authored a 2-part technical blog series: <em>"Unlocking Performance Insights: Prometheus + Grafana for MERN Stack Applications"</em>, covering metrics scraping, exporter setup, and custom dashboard visualization.
+                                </li>
+                            </ul>
+
+                            <div class="exp-highlights">
+                                <div class="badge-metric">⚡ 80% Manual Backup Reduction</div>
+                                <div class="badge-metric">🚀 15m → &lt;5m Provisioning Time</div>
+                                <div class="badge-metric">🔒 50+ Resources Audited</div>
+                            </div>
+
+                            <div class="tech-tags mt-4">
+                                <span class="tag">AWS SDK</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bash</span>
+                                <span class="tag">ScoutSuite</span>
+                                <span class="tag">Steampipe</span>
+                                <span class="tag">AMIs</span>
+                                <span class="tag">Prometheus</span>
+                                <span class="tag">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section-padding" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">&gt; FEATURED ENGINEERING</span>
+                    <h2 class="section-title">Projects Showcase</h2>
+                    <p class="section-description">Featured cloud platform architecture and security/cost optimization systems.</p>
+                </div>
+
+                <div class="project-featured-card glass-card">
+                    <div class="project-header">
+                        <div class="project-badge">Personal Project</div>
+                        <h3 class="project-title">Cloud Resource Audit & Cost Optimization Platform</h3>
+                        <p class="project-tagline">Automated Cloud Governance, Security Audit & Cost Reduction Suite for AWS</p>
+                    </div>
+
+                    <div class="project-grid">
+                        <div class="project-info">
+                            <p class="project-desc">
+                                A comprehensive multi-region cloud governance platform designed to continuously discover, audit, and optimize AWS resources across 7+ core services including EC2, EBS, S3, IAM, RDS, Elastic IPs, and Load Balancers.
+                            </p>
+
+                            <div class="project-features-list">
+                                <div class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span><strong>Automated Boto3 Discovery Engine:</strong> Scans & inspects 20+ AWS resources across multi-region infrastructure.</span>
+                                </div>
+                                <div class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span><strong>20+ Security & Cost Rules:</strong> Flags unattached EBS volumes, unassociated Elastic IPs, public S3 buckets, and risky IAM policies.</span>
+                                </div>
+                                <div class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span><strong>Terraform & Docker Ready:</strong> Full IaC manifests for AWS provisioning, GitHub Actions CI/CD, and containerized React/FastAPI stack.</span>
+                                </div>
+                                <div class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span><strong>Real-time Telemetry:</strong> Integrated Prometheus & Grafana monitoring 20+ infrastructure performance metrics.</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack-pills">
+                                <span class="pill">Python</span>
+                                <span class="pill">FastAPI</span>
+                                <span class="pill">React</span>
+                                <span class="pill">PostgreSQL</span>
+                                <span class="pill">AWS / Boto3</span>
+                                <span class="pill">Docker</span>
+                                <span class="pill">Terraform</span>
+                                <span class="pill">Kubernetes</span>
+                                <span class="pill">Prometheus</span>
+                                <span class="pill">Grafana</span>
+                            </div>
+                        </div>
+
+                        <!-- Architecture Diagram Representation -->
+                        <div class="project-arch-box">
+                            <div class="arch-title">System Architecture Flow</div>
+                            <div class="arch-diagram">
+                                <div class="arch-node arch-frontend">
+                                    <span class="node-icon">💻</span>
+                                    <span class="node-label">React Frontend</span>
+                                </div>
+                                <div class="arch-arrow">➔</div>
+                                <div class="arch-node arch-backend">
+                                    <span class="node-icon">⚡</span>
+                                    <span class="node-label">FastAPI Engine</span>
+                                </div>
+                                <div class="arch-arrow">➔</div>
+                                <div class="arch-node arch-aws">
+                                    <span class="node-icon">☁️</span>
+                                    <span class="node-label">AWS Services (Boto3)</span>
+                                </div>
+
+                                <div class="arch-subrow">
+                                    <div class="arch-node arch-db">
+                                        <span class="node-icon">🗄️</span>
+                                        <span class="node-label">PostgreSQL</span>
+                                    </div>
+                                    <div class="arch-node arch-monitoring">
+                                        <span class="node-icon">📊</span>
+                                        <span class="node-label">Prometheus + Grafana</span>
+                                    </div>
+                                    <div class="arch-node arch-iac">
+                                        <span class="node-icon">🏗️</span>
+                                        <span class="node-label">Terraform + K8s</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Audit Engine Demo Widget -->
+                <div class="audit-demo-container glass-card" id="audit-demo-anchor">
+                    <div class="demo-header">
+                        <div class="demo-title-group">
+                            <div class="demo-badge">INTERACTIVE SIMULATION</div>
+                            <h3>Live AWS Audit & Cost Optimization Engine</h3>
+                            <p>Simulate Kerthik's Boto3 rule engine inspecting AWS cloud resources in real-time.</p>
+                        </div>
+                        <button class="btn btn-primary" id="run-audit-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            <span>Run Audit Scan</span>
+                        </button>
+                    </div>
+
+                    <div class="audit-widget-body">
+                        <div class="audit-controls">
+                            <label class="control-label">Select Regions to Scan:</label>
+                            <div class="region-checkboxes">
+                                <label class="checkbox-tag"><input type="checkbox" checked value="us-east-1"> us-east-1 (N. Virginia)</label>
+                                <label class="checkbox-tag"><input type="checkbox" checked value="ap-south-1"> ap-south-1 (Mumbai)</label>
+                                <label class="checkbox-tag"><input type="checkbox" value="eu-west-1"> eu-west-1 (Ireland)</label>
+                            </div>
+                        </div>
+
+                        <div class="audit-results-grid">
+                            <div class="audit-log-terminal">
+                                <div class="log-header">
+                                    <span>SCAN EXECUTION LOG</span>
+                                    <span class="log-status" id="scan-status-text">Ready to scan</span>
+                                </div>
+                                <div class="log-console" id="audit-log-output">
+                                    <div class="log-entry t-muted">[INFO] Click "Run Audit Scan" to trigger Boto3 resource evaluation engine.</div>
+                                </div>
+                            </div>
+
+                            <div class="audit-summary-cards">
+                                <div class="mini-summary-card">
+                                    <div class="summary-val text-cyan" id="scanned-res-count">0</div>
+                                    <div class="summary-lbl">AWS Resources Scanned</div>
+                                </div>
+                                <div class="mini-summary-card">
+                                    <div class="summary-val text-warning" id="flagged-issues-count">0</div>
+                                    <div class="summary-lbl">Risks & Waste Detected</div>
+                                </div>
+                                <div class="mini-summary-card">
+                                    <div class="summary-val text-success" id="est-savings-count">$0/mo</div>
+                                    <div class="summary-lbl">Potential Monthly Savings</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Blog & Observability Spotlight -->
+        <section class="section-padding bg-alt" id="writing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">&gt; PUBLICATIONS & TECHNICAL WRITING</span>
+                    <h2 class="section-title">Observability & Monitoring Insights</h2>
+                </div>
+
+                <div class="blog-featured-card glass-card">
+                    <div class="blog-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-series-badge">2-PART TECHNICAL BLOG SERIES</span>
+                            <span class="blog-author">By Kerthik S</span>
+                        </div>
+                        <h3 class="blog-title">Unlocking Performance Insights: Prometheus + Grafana for MERN Stack Applications</h3>
+                        <p class="blog-excerpt">
+                            A deep dive into monitoring modern application stacks. Details architecture setup, metric scrapers, Node.js express Prometheus client integration, custom Grafana query dashboards, and configuring critical performance alert thresholds.
+                        </p>
+
+                        <div class="blog-topics">
+                            <span class="topic-pill">Prometheus Architecture</span>
+                            <span class="topic-pill">Grafana Dashboards</span>
+                            <span class="topic-pill">Node.js Metrics Scrapers</span>
+                            <span class="topic-pill">Alertmanager</span>
+                        </div>
+
+                        <div class="blog-actions">
+                            <button class="btn btn-outline" id="read-blog-modal-btn">Read Article Overview</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix -->
+        <section class="section-padding" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">&gt; TECHNICAL STACK</span>
+                    <h2 class="section-title">Skills & Infrastructure Ecosystem</h2>
+                </div>
+
+                <div class="skills-filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Skills</button>
+                    <button class="filter-tab" data-filter="devops">DevOps & Cloud</button>
+                    <button class="filter-tab" data-filter="monitoring">Monitoring & Tools</button>
+                    <button class="filter-tab" data-filter="programming">Languages & Frameworks</button>
+                </div>
+
+                <div class="skills-grid" id="skills-container">
+                    <!-- DevOps & Cloud Skills -->
+                    <div class="skill-card glass-card" data-category="devops">
+                        <div class="skill-header">
+                            <div class="skill-icon">☁️</div>
+                            <h4>AWS Services</h4>
+                        </div>
+                        <p class="skill-desc">EC2, S3, IAM, VPC, ECS, ECR, CloudWatch, EBS, RDS, Elastic IPs, Load Balancers.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 92%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="devops">
+                        <div class="skill-header">
+                            <div class="skill-icon">🏗️</div>
+                            <h4>Terraform & IaC</h4>
+                        </div>
+                        <p class="skill-desc">HCL infrastructure declarations, modular manifests, automated state management.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 88%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="devops">
+                        <div class="skill-header">
+                            <div class="skill-icon">🐳</div>
+                            <h4>Docker & Kubernetes</h4>
+                        </div>
+                        <p class="skill-desc">Containerization, multi-stage builds, Docker Compose, Kubernetes pod orchestration.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="devops">
+                        <div class="skill-header">
+                            <div class="skill-icon">⚙️</div>
+                            <h4>GitHub Actions & CI/CD</h4>
+                        </div>
+                        <p class="skill-desc">Automated build, test, and deployment workflows, GitHub secret management.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="devops">
+                        <div class="skill-header">
+                            <div class="skill-icon">🐧</div>
+                            <h4>Linux & Networking</h4>
+                        </div>
+                        <p class="skill-desc">Bash scripting, EC2 User Data automation, SSH, TCP/IP, Nginx reverse proxy.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 92%;"></div></div>
+                    </div>
+
+                    <!-- Monitoring & Tools -->
+                    <div class="skill-card glass-card" data-category="monitoring">
+                        <div class="skill-header">
+                            <div class="skill-icon">📊</div>
+                            <h4>Prometheus & Grafana</h4>
+                        </div>
+                        <p class="skill-desc">Telemetry collection, custom metrics exporters, real-time visual dashboards & alerts.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="monitoring">
+                        <div class="skill-header">
+                            <div class="skill-icon">🔒</div>
+                            <h4>ScoutSuite & Steampipe</h4>
+                        </div>
+                        <p class="skill-desc">Automated AWS security auditing, compliance scans, SQL-like infrastructure queries.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 88%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="monitoring">
+                        <div class="skill-header">
+                            <div class="skill-icon">🛠️</div>
+                            <h4>Dev Tools & Agile</h4>
+                        </div>
+                        <p class="skill-desc">Git version control, VS Code, Jira issue tracking, AWS SDK for JS & Python.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 95%;"></div></div>
+                    </div>
+
+                    <!-- Programming & Data Science -->
+                    <div class="skill-card glass-card" data-category="programming">
+                        <div class="skill-header">
+                            <div class="skill-icon">🐍</div>
+                            <h4>Python & Boto3</h4>
+                        </div>
+                        <p class="skill-desc">Automated AWS SDK scripts, backend automation engines, data processing algorithms.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="programming">
+                        <div class="skill-header">
+                            <div class="skill-icon">⚡</div>
+                            <h4>FastAPI & REST APIs</h4>
+                        </div>
+                        <p class="skill-desc">High-performance async Python backend endpoints, OpenAPI docs, system integration.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="programming">
+                        <div class="skill-header">
+                            <div class="skill-icon">🌐</div>
+                            <h4>JavaScript & React</h4>
+                        </div>
+                        <p class="skill-desc">AWS SDK for Node.js, modern React component UI building, dynamic dashboards.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 86%;"></div></div>
+                    </div>
+
+                    <div class="skill-card glass-card" data-category="programming">
+                        <div class="skill-header">
+                            <div class="skill-icon">🗄️</div>
+                            <h4>PostgreSQL & Databases</h4>
+                        </div>
+                        <p class="skill-desc">Relational database design, query optimization, AWS RDS deployment.</p>
+                        <div class="skill-level-bar"><div class="level-fill" style="width: 84%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-padding bg-alt" id="education">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">&gt; ACADEMIC BACKGROUND</span>
+                    <h2 class="section-title">Education & Qualifications</h2>
+                </div>
+
+                <div class="education-grid">
+                    <div class="edu-card glass-card">
+                        <div class="edu-badge">2024 – 2026</div>
+                        <div class="edu-icon">🎓</div>
+                        <h3 class="edu-degree">Master of Science in Data Science</h3>
+                        <div class="edu-institution">Periyar University</div>
+                        <div class="edu-location">Salem, Tamil Nadu, India</div>
+                        <p class="edu-desc">Advanced focus on statistical modeling, data analytics engines, automated data pipelines, machine learning logic, and big data management.</p>
+                    </div>
+
+                    <div class="edu-card glass-card">
+                        <div class="edu-badge">2019 – 2023</div>
+                        <div class="edu-icon">🏛️</div>
+                        <h3 class="edu-degree">Bachelor of Engineering in Computer Science and Engineering</h3>
+                        <div class="edu-institution">Government College of Engineering, Dharmapuri</div>
+                        <div class="edu-location">Dharmapuri, Tamil Nadu, India</div>
+                        <p class="edu-desc">Strong foundation in Computer Networks, Operating Systems, Cloud Architecture, Data Structures & Algorithms, and Software Engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-padding" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">&gt; GET IN TOUCH</span>
+                    <h2 class="section-title">Contact & Social Links</h2>
+                    <p class="section-description">Interested in discussing DevOps engineering, cloud security, or data opportunities?</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card glass-card">
+                        <h3>Contact Information</h3>
+                        <p class="contact-subtext">Feel free to reach out directly via email, phone, or GitHub.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="method-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:kerthikdev@gmail.com" class="method-value">kerthikdev@gmail.com</a>
+                                </div>
+                                <button class="btn-copy-small copy-email-btn" data-email="kerthikdev@gmail.com" title="Copy email">Copy</button>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+918610303751" class="method-value">+91 8610303751</a>
+                                </div>
+                                <button class="btn-copy-small copy-phone-btn" data-phone="8610303751" title="Copy phone">Copy</button>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">GitHub Profile</span>
+                                    <a href="https://github.com/kerthikdev" target="_blank" rel="noopener" class="method-value">github.com/kerthikdev</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="method-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">Chennai, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="DevOps Role / Project Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="4" required placeholder="Hi Kerthik, I'd like to talk about..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                            <div class="form-feedback" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">&gt;_ kerthik.dev</div>
+                <p>DevOps & Cloud Engineering Portfolio | Kerthik S</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Kerthik S. Includes White Theme & Dark Cyber Theme modes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Terminal Modal -->
+    <div class="terminal-modal" id="terminal-modal">
+        <div class="terminal-modal-content">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot dot-red" id="close-term-modal"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                </div>
+                <div class="terminal-title">kerthik@interactive-devops-shell:~</div>
+                <button class="modal-close-icon" id="modal-x-btn">&times;</button>
+            </div>
+            <div class="terminal-body modal-term-body" id="modal-term-body">
+                <div class="terminal-line"><span class="t-muted">=== Kerthik S DevOps Interactive CLI Terminal ===</span></div>
+                <div class="terminal-line"><span class="t-muted">Type 'help' to see available commands or 'exit' to close.</span></div>
+                <br>
+                <div class="interactive-input-line">
+                    <span class="t-prompt">kerthik@cloud-shell:~$</span>
+                    <input type="text" class="terminal-input" id="modal-term-input" autocomplete="off" spellcheck="false" autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Article Overview Modal -->
+    <div class="blog-modal" id="blog-modal">
+        <div class="blog-modal-card glass-card">
+            <div class="blog-modal-header">
+                <h3>Unlocking Performance Insights: Prometheus + Grafana for MERN Stack Applications</h3>
+                <button class="modal-close-icon" id="close-blog-modal">&times;</button>
+            </div>
+            <div class="blog-modal-body">
+                <div class="blog-modal-series-tag">2-PART TECHNICAL BLOG SERIES SUMMARY</div>
+                
+                <h4>Part 1: Instrumentation & Metric Scraping Architecture</h4>
+                <p>Explores integrating <code>prom-client</code> into Node.js Express microservices to collect default process metrics (CPU load, memory heap, event loop lag) and custom application metrics (HTTP request counts, route response latency histogram, DB query execution time).</p>
+                
+                <h4>Part 2: Grafana Visual Dashboards & Alerting Rules</h4>
+                <p>Walks through configuring Prometheus scrape targets, writing PromQL queries for 95th percentile latency calculations, and crafting production-grade Grafana dashboards with visual alerts triggered via Slack and PagerDuty webhooks.</p>
+                
+                <div class="blog-modal-takeaway">
+                    <strong>Key Takeaway:</strong> Demonstrates practical end-to-end monitoring setup that reduced metric visibility gaps across application layers and cut MTTR (Mean Time to Resolution).
+                </div>
+            </div>
+            <div class="blog-modal-footer">
+                <button class="btn btn-secondary" id="close-blog-modal-btn">Close Overview</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Tooltip Toast -->
+    <div class="toast-notification" id="toast">Copied to clipboard!</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
