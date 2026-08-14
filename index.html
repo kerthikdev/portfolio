@@ -730,22 +730,25 @@
                     <!-- Contact Form -->
                     <div class="contact-form-card glass-card">
                         <h3>Send a Message</h3>
-                        <form id="contact-form" onsubmit="return false;">
+                        <form id="contact-form" action="https://formsubmit.co/kerthikdev@gmail.com" method="POST">
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message from kerthik.me">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
                             <div class="form-group">
                                 <label for="form-name">Your Name</label>
-                                <input type="text" id="form-name" required placeholder="John Doe">
+                                <input type="text" id="form-name" name="name" required placeholder="John Doe">
                             </div>
                             <div class="form-group">
                                 <label for="form-email">Your Email</label>
-                                <input type="email" id="form-email" required placeholder="john@example.com">
+                                <input type="email" id="form-email" name="email" required placeholder="john@example.com">
                             </div>
                             <div class="form-group">
                                 <label for="form-subject">Subject</label>
-                                <input type="text" id="form-subject" required placeholder="DevOps Role / Project Inquiry">
+                                <input type="text" id="form-subject" name="subject" required placeholder="DevOps Role / Project Inquiry">
                             </div>
                             <div class="form-group">
                                 <label for="form-message">Message</label>
-                                <textarea id="form-message" rows="4" required placeholder="Hi Kerthik, I'd like to talk about..."></textarea>
+                                <textarea id="form-message" name="message" rows="4" required placeholder="Hi Kerthik, I'd like to talk about..."></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
                                 <span>Send Message</span>

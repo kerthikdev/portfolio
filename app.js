@@ -479,19 +479,53 @@ function initContactForm() {
 
     if (!form || !submitBtn) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        const name = document.getElementById('form-name').value;
+        const name = document.getElementById('form-name').value.trim();
+        const email = document.getElementById('form-email').value.trim();
+        const subject = document.getElementById('form-subject').value.trim();
+        const message = document.getElementById('form-message').value.trim();
+
+        if (!name || !email || !message) return;
+
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<span>Sending Message...</span>';
+        feedback.innerHTML = '';
 
-        setTimeout(() => {
-            feedback.innerHTML = `<span style="color: var(--emerald-success); font-weight: 600;">✓ Thank you, ${escapeHTML(name)}! Your message has been sent successfully. Kerthik will get back to you soon.</span>`;
-            form.reset();
+        try {
+            const response = await fetch('https://formsubmit.co/ajax/kerthikdev@gmail.com', {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    _subject: subject ? `[kerthik.me] ${subject}` : `[kerthik.me] New message from ${name}`,
+                    message: message
+                })
+            });
+
+            const data = await response.json();
+
+            if (response.ok || data.success === "true" || data.success === true) {
+                feedback.innerHTML = `<span style="color: var(--emerald-success); font-weight: 600;">✓ Thank you, ${escapeHTML(name)}! Your message has been sent to kerthikdev@gmail.com.</span>`;
+                form.reset();
+            } else {
+                feedback.innerHTML = `<span style="color: var(--emerald-success); font-weight: 600;">✓ Message sent! (Opening email backup...)</span>`;
+                window.location.href = `mailto:kerthikdev@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+            }
+        } catch (err) {
+            console.error("Form submit error:", err);
+            // Fallback for offline or CORS block
+            feedback.innerHTML = `<span style="color: var(--emerald-success); font-weight: 600;">✓ Opening your email client to send message...</span>`;
+            window.location.href = `mailto:kerthikdev@gmail.com?subject=${encodeURIComponent(subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+        } finally {
             submitBtn.disabled = false;
-            submitBtn.innerHTML = '<span>Send Message</span>';
-        }, 1200);
+            submitBtn.innerHTML = `<span>Send Message</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>`;
+        }
     });
 }
 
